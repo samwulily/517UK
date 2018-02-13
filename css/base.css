@@ -1,0 +1,53 @@
+body,form,fieldset,select,input,textarea,h1,h2,h3,h4,h5,h6,table,td,th,p,div,ul,li,dl,dd,img,a {
+	margin:0;
+	padding:0;
+	font:normal 12px/1.75 Arial, "ËÎÌå"; 
+	color:#000;
+}
+img{ border:0; vertical-align:middle;}
+a { color:#066; text-decoration: none;}
+a:hover { text-decoration:underline; color:#399;}
+#top,#nav,#main,#linksBar,#bot {margin:0 auto; width:960px;	clear:both;}
+.blank10{clear:both; height:10px; overflow:hidden; display:block;}
+
+
+/*- nav SECTION -*/
+#nav,#navLeftL,#navLeft,#navMiddle,#navRight,#navRightR { height:31px;}
+#navLeftL,#navLeft,#navMiddle,#navRight,#navRightR { float:left; overflow:hidden;}
+#nav { /*overflow:hidden;*/ border-bottom:4px solid #339999;  }/*2010.7.1ÐÞ¸Ä*/
+#nav #navLeftL { width:10px; font-size:1px; background:url(../../../../../Users/Administrator/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/Content.IE5/V7MEIOYP/nav_left.jpg);}
+/*-- nav SECTION left hand --*/
+#nav #navLeft { width:270px; background:url(../../../../../Users/Administrator/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/Content.IE5/V7MEIOYP/nav_leftbg.jpg) 0 0 repeat-x;}
+#nav #navLeft .leftbox { float:left; padding-left:0px; color:#c00; font-weight:bolder; text-align:left;}
+#nav #navLeft .leftbox a { line-height:34px; color:#000; padding:0 5px; font-weight:normal;}
+/*2010.6.28ÐÞ¸Ä*/
+#nav #navLeft .leftbox span{ line-height:34px; padding-left:0px; color:#00939d; font-size:12px; font-weight:normal;}
+#nav #navLeft .leftbox a.reg{ padding-left:10px;}
+#nav #navLeft .leftbox a.wenhao { cursor:help; padding-left:10px;}
+#nav #navLeft .leftbox a.eng { padding-right:5px;}
+#nav #navMiddle { width:30px; background:url(../../../../../Users/Administrator/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/Content.IE5/V7MEIOYP/nav_middle.jpg) 0 0 no-repeat;}
+/*-- nav SECTION right hand, main menu --*/
+#nav #navRight { width:640px; background:url(../../../../../Users/Administrator/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/Content.IE5/V7MEIOYP/nav_rightbg.jpg) 0 0 repeat-x;}
+#nav #navRight .menu { margin-left:0; width:600px;}
+#nav #navRight .menu a, 
+#nav #navRight .menu .currentItem { display:block; float:left; width:100px; height:31px; line-height:31px; padding-top:3px; text-align:center; font-size:14px; font-weight:bolder; color:#fff; text-decoration:none; filter: Glow(Color=#006666, Strength=1); text-shadow:0 1px #066;}
+#nav #navRight .menu a:hover, 
+#nav #navRight .menu .currentItem { text-decoration:none; color:#066; filter: Glow(Color=#ffffff, Strength=1); background:url(../../../../../Users/Administrator/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/Content.IE5/images/menu-on-bg.jpg); text-shadow:0 -1px #fff;}
+#nav #navRightR { width:10px; font-size:1px; background:url(../../../../../Users/Administrator/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/Content.IE5/V7MEIOYP/nav_right.jpg);}
+
+/*--picdisplay SECTION--*/
+
+span,li,dt,dd,p,h1,h2,h3,h4,h5,h6{text-align:left;}
+img{border:0;}
+ul,li{list-style-type:none;}
+p{line-height:150%;}
+#YSlide{position:relative;z-index:1;margin:0px auto;width:230px;height:265px;padding:0px;overflow:hidden; background:url(../../../../../Users/Administrator/AppData/Local/Microsoft/Windows/Temporary%20Internet%20Files/Content.IE5/images/picplay_bg.gif) top left no-repeat; z-index:6; overflow:hidden;}
+.YSample{margin:9px auto;overflow:hidden;}
+.YSample,.YSample img{width:220px;height:246px; overflow:hidden;}
+#YSIndex{position:absolute;z-index:6;top:228px;left:4px;width:220px;text-align:right;height:40px;line-height:40px;overflow:hidden;}
+#YSIndex a:link,#YSIndex a:visited,#YSIndex a:hover{background-color:#fff;position:relative;z-index:6;padding:1px 2px;border:1px solid #028f8f;color:#028f8f;margin-right:5px;font-weight:bold;text-decoration:none;font-size:14px;}
+#YSIndex a:hover,#YSIndex a.current:link,#YSIndex a.current:visited,#YSIndex a.current:hover{background-color:#3f9f9f; border:1px solid #028f8f; color:#FFFFFF;}
+.even{background-color:#F8F8F8;}
+.odd{background-color:#EAEFF5;}
+.hover{background-color:#B0BEC7;color:#FFF;cursor:pointer;}
+.hidden{display:none;clear:both;}

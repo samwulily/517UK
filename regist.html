@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<title>CompanyName - PageName</title>
+<meta http-equiv="Content-Language" content="en-us" /> 
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" /> 
+<meta name="description" content="Description" />
+<meta name="keywords" content="Keywords" /> 
+<meta name="author" content="Enlighten Designs" />
+<style type="text/css" media="all">@import "css/master.css";</style>
+<script type="text/javascript" src="js/ajaxmethod.js"></script>
+<script type="text/javascript">
+
+function IsNum(s)
+{
+	if(s === ""){
+		return false;
+	}
+    if(s!=null){
+        var r,re;
+        re = /\d*/i; //\d表示数字,*表示匹配多个数字
+        r = s.match(re);
+        return (r==s)?true:false;
+    }
+    return false;
+}
+
+function focusEmail(){
+	var temail = document.getElementById("email").value;
+	var temail_label = document.getElementById("email_des");
+	temail_label.innerText = "用来登录，用户ID";
+	temail_label.style.color = "grey";
+}
+
+function focuspwd(){
+	var tpwd_label = document.getElementById("pwd_des");
+	tpwd_label.innerText = "请输入密码";
+	tpwd_label.style.color = "grey";
+}
+
+function focuspwd1(){
+	var tpwd1_label = document.getElementById("pwd1_des");
+	tpwd1_label.innerText = "请再一次输入密码，两次输入的密码要一致";
+	tpwd1_label.style.color = "grey";
+}
+
+function focusNickname(){
+	var tnickname = document.getElementById("nick_name").value;
+	var tnickname_label = document.getElementById("nickname_des");
+	tnickname_label.innerText = "昵称将显示在您发布的需求中,并被别人用来称呼您";
+	tnickname_label.style.color = "grey";
+}
+
+function focusPhoneNumber(){
+	var tphoneNumber_des = document.getElementById("phoneNumber_des");
+	tphoneNumber_des.innerText = "请输入手机号码";
+	tphoneNumber_des.style.color = "grey";
+}
+
+function focusYZM(){
+	var tYZM_des = document.getElementById("YZM_des");
+	tYZM_des.innerText = "输入下图中的字符,请注意大小写一致";
+	tYZM_des.style.color = "grey";
+}
+
+function checkpwd(){
+	var tpwd = document.getElementById("pwd");
+	var tpwd_des = document.getElementById("pwd_des");
+	if(tpwd.value.replace(/(^s*)|(s*$)/g,"").length < 6){
+		tpwd_des.innerText = "密码长度不得少于6个字符";
+		tpwd_des.style.color = "red";
+		return tpwd_des.innerText;
+	}else{
+		tpwd_des.innerText = "密码可用";
+		tpwd_des.style.color = "green";
+		return "OK";
+	}
+}
+
+function checkpwd1(){
+	var tpwd = document.getElementById("pwd").value;
+	var tpwd1 = document.getElementById("pwd1").value;
+	var tpwd1_des = document.getElementById("pwd1_des");
+	if(tpwd !== tpwd1){
+		tpwd1_des.innerText = "两次输入的密码必须一致！";
+		tpwd1_des.style.color = "red";
+		return tpwd1_des.innerText;
+	}else{
+		tpwd1_des.innerText = "两次密码一致！";
+		tpwd1_des.style.color = "green";
+		return "OK";
+	}
+}
+
+function checkPhoneNumber(){
+	var tphone_number = document.getElementById("phoneNumber").value;
+	var tphone_number_des = document.getElementById("phoneNumber_des");
+	if(!IsNum(tphone_number)){
+		tphone_number_des.innerText = "请输入正确的手机号码";
+		tphone_number_des.style.color = "red";
+		return tphone_number_des.innerText;
+	}else{
+		tphone_number_des.innerText = "手机号码通过";
+		tphone_number_des.style.color = "green";
+		return "OK";
+	}
+}
+
+function formsubmit(){
+	var msg = checkEmail();
+	if(msg!="OK"){
+		alert(msg);
+		return false;
+	}
+	msg = checkpwd();
+	if(msg!="OK"){
+		alert(msg);
+		return false;
+	}
+	msg = checkpwd1();
+	if(msg!="OK"){
+		alert(msg);
+		return false;
+	}
+	msg = checkNickname();
+	if(msg!="OK"){
+		alert(msg);
+		return false;
+	}
+//	msg = checkPhoneNumber();
+//	if(msg!="OK"){
+//		alert(msg);
+//		return false;
+//	}
+	msg = checkYZM();
+	if(msg!="OK"){
+		alert(msg);
+		return false;
+	}
+	document.getElementById("registForm").submit();
+	return true;
+}
+
+</script>
+
+</head>
+<body>
+
+<div id="page-container">  
+	<iframe frameborder=0 width=940px height=30px marginheight=0 marginwidth=0 scrolling= no 
+	src="login_reg_nav.php"></iframe>
+	<iframe frameborder=0 width=940px height=36px marginheight=0 marginwidth=0 scrolling= no 
+	src="nav.html"></iframe>
+	<iframe frameborder=0 width=940px height=150px marginheight=0 marginwidth=0 scrolling= no 
+	src="header.html"></iframe>
+
+	<h1>成为英杰会员，享受更多福利</h1>
+	<h2>私人订制，您的旅程您做主</h2><br>
+	<h2>发布行程，司导由您选</h2><br>
+<!--	<h2>计费透明，明白消费</h2><br>
+	<h2>安全可靠，司导有认证</h2><br>
+	<h2>投诉有门，评价体系</h2><br>
+-->
+	<form action="add_user.php" id="registForm" name="registForm" method="post">
+	<table>
+		<tr>
+			<td>电子邮箱：</td>
+			<td><input type="text" id="email" name="email" size="51" onfocus="focusEmail()" 
+			onBlur="return checkEmail()">
+				<font color="red" size=5>*</font>
+				<label id="email_des" name="email_des"></label>
+			</td>
+		</tr>
+		<tr>
+			<td>密码：</td>
+			<td><input type="password" id="pwd" name="pwd" size="51" onfocus="focuspwd()" 
+			onBlur="return checkpwd()">
+				<font color="red" size=5>*</font>
+				<label id="pwd_des" name="pwd_des"></label>
+			</td>
+		</tr>
+		<tr>
+			<td>再次输入密码：</td>
+			<td><input type="password" id="pwd1" name="pwd1" size="51" onfocus="focuspwd1()" 
+			onBlur="return checkpwd1()">
+				<font color="red" size=5>*</font>
+				<label id="pwd1_des" name="pwd1_des"></label>
+			</td>
+		</tr>
+		<tr>
+			<td>联系人昵称：</td>
+			<td>
+				<input type="text" id="nick_name" name="nick_name" size="10" 
+					onfocus="focusNickname()" onBlur="return checkNickname()">
+				<font color="red" size=5>*</font>
+				<label id="nickname_des" name="nickname_des"></label>
+			</td>
+		</tr>
+		<tr>
+			<td>手机号码：</td>
+			<td>
+				<select name="area" id="area" onchange="">
+					<option value="0044" selected>+44</option>	
+					<option value="0086">+86</option>			
+				</select>
+				<input type="text" id="phoneNumber" name="phoneNumber" size="43.5"
+					onfocus="focusPhoneNumber()" onBlur="return checkPhoneNumber()">
+				<label id="phoneNumber_des" name="phoneNumber_des"></label>
+			</td>
+		</tr>
+		<tr>
+			<td>验证码：</td>
+			<td>
+				<input type="text" id="yzm" name="yzm" size="10"
+					onfocus="focusYZM()" onBlur="return checkYZM()">
+				<font color="red" size=5>*</font>
+				<label id="YZM_des" name="YZM_des"></label>
+			</td>
+		</tr>
+		<tr>
+			<td><a href=# onclick="yanzhengma.src='tupianyanzhengma.php?t='+(new Date().getTime());
+			return false;">看不清楚,换一张</a></td>
+			<td><img src="tupianyanzhengma.php" name="yanzhengma" id="yanzhengma"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><button type="button" onclick="formsubmit()">提交</button></td>
+		</tr>
+	</table>
+  </form>
+	<iframe frameborder=0 width=940px height=66px marginheight=0 marginwidth=0 
+	scrolling= no src="footer.html"></iframe>
+</div>
+  
+
+</body>
+</html>
+

@@ -1,0 +1,190 @@
+[2015-11-04 23:26 Asia/Chongqing] Test
+[2015-11-04 23:26 Asia/Chongqing] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1029
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=10.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=07%3A38%3A51+Nov+04%2C+2015+PST&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=99&mc_fee=0.54&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=A5jg5FHbO3aWQKHd4A60fQrDAEioAqbpJ2ZG3WqVW8Xq9FyWdhPgJYg2&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=8JA01529KV751974V&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=d529f126343a2
+[2015-11-04 23:26 Asia/Chongqing] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Wed, 04 Nov 2015 15:38:55 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=fT_FfH14uYZmcgMacY0QaywZZPmfvpQV2kDFZ7UTzRXuIdgbvlwDHX_ZbwPpAYC0zbc7Hm6Z9KX9p1rh_7wtGIfMuF8YdkG2HAVJpi1Z5WMp4ZWKyv0pLm9ACS-Mc8I1K3WtK--_4zm5mDgjNFtipgkjKTjD0VaEq6JSfFZCbK2Bw2p9QBO44Con1hty6xqFlTGvFqVHamDlyNZkzlA-TTWYPIm5d5wSPkI8ezJed8eFZMOPEahDyUN5JTRsK1_gvjWwTPvUjOrBOSzygbei1qaiKCv8zVWBP2uM8ACsoJvbRYO4kG5TzOtU5mfimMokrOK5o-bdaI99ApHFMIZTSSOsXyIb65jO7q-GGNj7NEhIqxSdJZGFLA1tgAS5lvTB6nzLndU5ady19wtB44xw0DE52MWVKhyq45y8m62_Bbnn_Z3JBzd7mOrff7u; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sat, 01-Nov-2025 15:38:56 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Fri, 03-Nov-2017 15:38:56 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1446651535891456; path=/; expires=Fri, 27-Oct-45 15:38:55 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Paypal-Debug-Id: bef0ebc7d57f8
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D2401647190; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.72.128.11.1446651535874274; path=/; expires=Fri, 27-Oct-45 15:38:55 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2015-11-04 23:26 Asia/Chongqing] +++++++++payment status:Completed txn_id:8JA01529KV751974V receiver_email:samwulily-seller@hotmail.co.uk payment amount:10.00 payment currency:GBP payer email:samwulily-buyer@hotmail.co.uk
+[2015-11-04 23:26 Asia/Chongqing] execGetOrder:select userID,detail from bookcar where reserveid = '99'
+[2015-11-04 23:26 Asia/Chongqing] reserve person:junwu2012@hotmail.com detail:测试普通用户1,您需要在11/12/2015 11:0 从 （大不列颠）联合王国阿伯丁城阿伯丁戴斯邮政编码: AB21 7DU 到 阿伯丁阿伯丁城 AB24 1WU（大不列颠）联合王国 总共 10.8 公里 如果道路通畅，预计用时 20分钟预计费用17英镑。 请注意，此费用仅为估计报价，最终报价由司机报价为准。司机会通过您预留的电话和邮箱和您确认，祝您路途愉快！
+[2015-11-04 23:26 Asia/Chongqing] Before yjmsendmail, send to:junwu2012@hotmail.com, detail: 测试普通用户1,您需要在11/12/2015 11:0 从 （大不列颠）联合王国阿伯丁城阿伯丁戴斯邮政编码: AB21 7DU 到 阿伯丁阿伯丁城 AB24 1WU（大不列颠）联合王国 总共 10.8 公里 如果道路通畅，预计用时 20分钟预计费用17英镑。 请注意，此费用仅为估计报价，最终报价由司机报价为准。司机会通过您预留的电话和邮箱和您确认，祝您路途愉快！
+[2015-11-04 23:26 Asia/Chongqing] After yjmsendmail
+[2015-11-04 23:26 Asia/Chongqing] Verified IPN: cmd=_notify-validate&mc_gross=10.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=07%3A38%3A51+Nov+04%2C+2015+PST&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=99&mc_fee=0.54&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=A5jg5FHbO3aWQKHd4A60fQrDAEioAqbpJ2ZG3WqVW8Xq9FyWdhPgJYg2&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=8JA01529KV751974V&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=d529f126343a2 
+[2015-11-05 19:38 Asia/Chongqing] Test
+[2015-11-05 19:38 Asia/Chongqing] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1029
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=17.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=03%3A50%3A39+Nov+05%2C+2015+PST&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=100&mc_fee=0.78&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=AIkKNboJiyuxWLOHUlzTd3lpqCSxAKJ5gYcjW0NmtweIle5xcM8t3Pid&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=06639835BW3339414&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=1156f21623ce
+[2015-11-05 19:38 Asia/Chongqing] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Thu, 05 Nov 2015 11:51:09 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=IwuIo8fOPBnf8W5-rhsIPF3sJiOEec0NfPodx5ICpI35bkLizYlCZ4XAGeBhGjA0p9dSPZvZKY3040EhM7NhIhB0NG6Ml6IgmS9j05NJs_BX8nxJxed1oFFXMuSLx7z-2xykSCmItDU9QXk9ZlUlNktI7O7qjoDkFzVVRc37GDxIsOZt8Tl7mesx0BJU-9P_d-VnDfLNLSQf-eF2cjJZMLrw0ezeIY-bI2Qdy4kaUpeiZUqNMhlsfn0tg60sQo4LonRxCeeSW8mrF2hBEFna26TYJAvFqm0bN-__L0EYD7t2gtO0VFDX5ioJEvDUHqPpkU9EBGUtn8HtJPP7EmSNySs0ATS0PE0DKGRKmfXdQ5LBHIzeLt_OXZJsGn1JYdZXzaCN-6rgMI7apbRYpehs5HSVB4zf-Zz03qg9JOHJUWMATwlR90iPI-Wi5la; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 02-Nov-2025 11:51:09 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 04-Nov-2017 11:51:09 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1446724269344608; path=/; expires=Sat, 28-Oct-45 11:51:09 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Paypal-Debug-Id: b5a522f44f401
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D2906798934; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.72.128.11.1446724269324313; path=/; expires=Sat, 28-Oct-45 11:51:09 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2015-11-05 19:38 Asia/Chongqing] +++++++++payment status:Completed txn_id:06639835BW3339414 receiver_email:samwulily-seller@hotmail.co.uk payment amount:17.00 payment currency:GBP payer email:samwulily-buyer@hotmail.co.uk
+[2015-11-05 19:38 Asia/Chongqing] execGetOrder:select userID,detail from bookcar where reserveid = '100'
+[2015-11-05 19:38 Asia/Chongqing] reserve person:junwu2012@hotmail.com detail:测试普通用户1,您需要在 0:0 从 （大不列颠）联合王国阿伯丁城阿伯丁戴斯邮政编码: AB21 7DU 到 阿伯丁阿伯丁城 AB24 1WU（大不列颠）联合王国 总共 10.8 公里 如果道路通畅，预计用时 20分钟预计费用17英镑。 请注意，此费用仅为估计报价，最终报价由司机报价为准。司机会通过您预留的电话和邮箱和您确认，祝您路途愉快！
+[2015-11-05 19:38 Asia/Chongqing] Before yjmsendmail, send to:junwu2012@hotmail.com, detail: 测试普通用户1,您需要在 0:0 从 （大不列颠）联合王国阿伯丁城阿伯丁戴斯邮政编码: AB21 7DU 到 阿伯丁阿伯丁城 AB24 1WU（大不列颠）联合王国 总共 10.8 公里 如果道路通畅，预计用时 20分钟预计费用17英镑。 请注意，此费用仅为估计报价，最终报价由司机报价为准。司机会通过您预留的电话和邮箱和您确认，祝您路途愉快！
+[2015-11-05 19:38 Asia/Chongqing] After yjmsendmail
+[2015-11-05 19:38 Asia/Chongqing] Verified IPN: cmd=_notify-validate&mc_gross=17.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=03%3A50%3A39+Nov+05%2C+2015+PST&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=100&mc_fee=0.78&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=AIkKNboJiyuxWLOHUlzTd3lpqCSxAKJ5gYcjW0NmtweIle5xcM8t3Pid&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=06639835BW3339414&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=1156f21623ce 
+[2015-11-05 19:43 Asia/Chongqing] Test
+[2015-11-05 19:43 Asia/Chongqing] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1029
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=16.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=03%3A55%3A57+Nov+05%2C+2015+PST&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=101&mc_fee=0.74&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=AJ6Id8M9culWqJe1A9Yx4N584fvvAGoVua-wqZ0F46dmT0TaHBeRzvdh&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=3NE47675VY626181W&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=b15ae9172931
+[2015-11-05 19:43 Asia/Chongqing] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Thu, 05 Nov 2015 11:56:03 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=VV6eSGYOs4iuzMDNQL9jHUHnuLc-WI0Kk0EQKfJgLnSFk9gGPELliESs8XUfp1zLmiHzcB80GS8Ya-iZV5od8820lSmDYd4lRhBkbSYdKma6SgkXXrvzKhkXgtd8nJXhD_F_FcSaMipeOgEYu_VZ4YUbDMCVpisHG2Psw_i88r_NhCI4mjy52p5JWXi93kliLmUW_M5NeE1LpqirabEecJeDNFa07Ha7DthUXMNpUpJsOnQ8SUoFU7qzdwpYlQkPojMo4hOZ-ihK7dcDmBVQ-VxJW8c8kaAmF7FzUbOIfcflWZFAvy6Ge9dLt2OX4IcaXJBjRV5KL7FM_4hA8kVkFtlFLoPvg_zsTkjRokbKpkArF-K1epWD0P1m9D4hj2O-5_ZsJpNv66iX7lGJCYMR_NI6VPH6bQfBpctMUdtde2RDcahS4uinMCbOgTW; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 02-Nov-2025 11:56:04 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 04-Nov-2017 11:56:04 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1446724563741116; path=/; expires=Sat, 28-Oct-45 11:56:03 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Paypal-Debug-Id: 1e75d617b0377
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D3544398678; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.72.128.11.1446724563721602; path=/; expires=Sat, 28-Oct-45 11:56:03 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2015-11-05 19:43 Asia/Chongqing] +++++++++payment status:Completed txn_id:3NE47675VY626181W receiver_email:samwulily-seller@hotmail.co.uk payment amount:16.00 payment currency:GBP payer email:samwulily-buyer@hotmail.co.uk
+[2015-11-05 19:43 Asia/Chongqing] execGetOrder:select userID,detail from bookcar where reserveid = '101'
+[2015-11-05 19:43 Asia/Chongqing] reserve person:junwu2012@hotmail.com detail:测试普通用户1,您需要在 0:0 从 （大不列颠）联合王国阿伯丁城阿伯丁戴斯邮政编码: AB21 7DU 到 阿伯丁阿伯丁阿伯丁城 AB25 1PX（大不列颠）联合王国 总共 10.4 公里 如果道路通畅，预计用时 20分钟预计费用16英镑。 请注意，此费用仅为估计报价，最终报价由司机报价为准。司机会通过您预留的电话和邮箱和您确认，祝您路途愉快！
+[2015-11-05 19:43 Asia/Chongqing] Before yjmsendmail, send to:junwu2012@hotmail.com, detail: 测试普通用户1,您需要在 0:0 从 （大不列颠）联合王国阿伯丁城阿伯丁戴斯邮政编码: AB21 7DU 到 阿伯丁阿伯丁阿伯丁城 AB25 1PX（大不列颠）联合王国 总共 10.4 公里 如果道路通畅，预计用时 20分钟预计费用16英镑。 请注意，此费用仅为估计报价，最终报价由司机报价为准。司机会通过您预留的电话和邮箱和您确认，祝您路途愉快！
+[2015-11-05 19:43 Asia/Chongqing] After yjmsendmail
+[2015-11-05 19:43 Asia/Chongqing] Verified IPN: cmd=_notify-validate&mc_gross=16.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=03%3A55%3A57+Nov+05%2C+2015+PST&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=101&mc_fee=0.74&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=AJ6Id8M9culWqJe1A9Yx4N584fvvAGoVua-wqZ0F46dmT0TaHBeRzvdh&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=3NE47675VY626181W&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=b15ae9172931 
+[2015-11-14 00:29 Asia/Chongqing] Test
+[2015-11-14 00:29 Asia/Chongqing] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1029
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=17.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=08%3A42%3A25+Nov+13%2C+2015+PST&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=87&mc_fee=0.78&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=ARyNDMbKwa-zLx7AtfPa-etrhyTVA4p2ZTDWKY7nDFI1eDyuVBc1l66I&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=38X88793109316506&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=6e11df335786d
+[2015-11-14 00:29 Asia/Chongqing] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Fri, 13 Nov 2015 16:42:33 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=wYp61sTQZXMaaD8LSxHqQgvqSj1Ag7R0q4sb-3SEpF0wVh8YtVdtB8FUROENN-1o8-2dyicXm2WCYEMuMCh3I6r_1jFK9UT5VYlyrMB5cKQ1MtbnGf_JEr32aaRk6sXfogpN4U8jY36mk4r6p_6ZCc7ghgKzevxbRrK0S8UifHQ2Ks9bOqSyehPDEA7W-GlvGqTGzb6TPW5iY9pZth2r7ZxhQ47NwSYJgWuYPMmIFAZ5ULi9iMcQD141IkdCwFZWpK_vXIMkoMzVIxVyfAz4M8NdBHSoOTyDc1PNOW9maJC_7QBcnmkWHiWTm7Rmp3BbYapT3FydWOZZ-ho8KaA3d_gPHwC_zBSBeESjlxVky5CQull3f6O3nUOmUbyyKAMVyc1IXHNe3SC66PCmfOYUr67yfP3Iepbv-9eMvWFjBRAoolC6g983mrPhuH0; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 10-Nov-2025 16:42:34 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 12-Nov-2017 16:42:34 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1447432953798570; path=/; expires=Sun, 05-Nov-45 16:42:33 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Paypal-Debug-Id: ba9ca1b1be225
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D4178724438; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.72.128.11.1447432953778501; path=/; expires=Sun, 05-Nov-45 16:42:33 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2015-11-14 00:29 Asia/Chongqing] +++++++++payment status:Completed txn_id:38X88793109316506 receiver_email:samwulily-seller@hotmail.co.uk payment amount:17.00 payment currency:GBP payer email:samwulily-buyer@hotmail.co.uk
+[2015-11-14 00:29 Asia/Chongqing] execGetOrder:select userID,detail from bookcar where reserveid = '87'
+[2015-11-14 00:29 Asia/Chongqing] reserve person:junwu2012@hotmail.com detail:测试普通用户1,您需要在 0:0 从 （大不列颠）联合王国阿伯丁城阿伯丁戴斯邮政编码: AB21 7DU 到 阿伯丁阿伯丁城 AB24 1WU（大不列颠）联合王国 总共 10.8 公里 如果道路通畅，预计用时 20分钟预计费用17英镑。 请注意，此费用仅为估计报价，最终报价由司机报价为准。司机会通过您预留的电话和邮箱和您确认，祝您路途愉快！
+[2015-11-14 00:29 Asia/Chongqing] Before yjmsendmail, send to:junwu2012@hotmail.com, detail: 测试普通用户1,您需要在 0:0 从 （大不列颠）联合王国阿伯丁城阿伯丁戴斯邮政编码: AB21 7DU 到 阿伯丁阿伯丁城 AB24 1WU（大不列颠）联合王国 总共 10.8 公里 如果道路通畅，预计用时 20分钟预计费用17英镑。 请注意，此费用仅为估计报价，最终报价由司机报价为准。司机会通过您预留的电话和邮箱和您确认，祝您路途愉快！
+[2015-11-14 00:29 Asia/Chongqing] After yjmsendmail
+[2015-11-14 00:29 Asia/Chongqing] Verified IPN: cmd=_notify-validate&mc_gross=17.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=08%3A42%3A25+Nov+13%2C+2015+PST&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=87&mc_fee=0.78&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=ARyNDMbKwa-zLx7AtfPa-etrhyTVA4p2ZTDWKY7nDFI1eDyuVBc1l66I&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=38X88793109316506&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=6e11df335786d 
+[2015-11-15 03:54 Asia/Chongqing] Test
+[2015-11-15 03:54 Asia/Chongqing] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1030
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=17.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=12%3A06%3A53+Nov+14%2C+2015+PST&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=103&mc_fee=0.78&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=A5Glnolq0L4ux4KY3kRsLkKv6ysmACGBqlIm43aVm6dJNUfzCY5uK2M4&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=4ET2541151806962R&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=23a0e95fea7cb
+[2015-11-15 03:54 Asia/Chongqing] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Sat, 14 Nov 2015 20:07:14 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=AVmow3-KYsdh_PBhQoDnpqhmhwrgZJEnC3CkV9-SC2Z-EO55UVJjqXNTCnT2h-z30H-aHI3j3pXssVsocY18WKHBVB6nGLnKDQQxwMyiMUyQAS4uj9cFk-qMmf6FXfXe6eD6tmNYYlyTmosfcEFlTVFHLTm8U5eKt9-Q6Z1j6WGAXllJI23eCcWv5nvOKnJcesUOEyTqu83SlM9cj-x2bsVfsGo8nlEjfsylw_nQKqoZTp9SSVtyebKgcKftuEnJQOQgLZXf9vlAUcfrgkrXDOIBPp3YADyMwtRCMcZqjeomIfchs_IhCTNza9QFK5mcGK4uv5LJUyER7WmB2l39xGKQM-UVTlAqqOrpKCTMGIqTOjCzQrrLnGRpK7bzQC6dEBtulI97SF-1ZTJ8W3K0eCOvQxJ1iGlGuWZptnRTU7N4gOxTyy5hvUkfOh8; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Tue, 11-Nov-2025 20:07:15 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Mon, 13-Nov-2017 20:07:15 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1447531634727397; path=/; expires=Mon, 06-Nov-45 20:07:14 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Paypal-Debug-Id: 4d30f8b7ad3f7
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D1922320214; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.72.128.11.1447531634709392; path=/; expires=Mon, 06-Nov-45 20:07:14 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2015-11-15 03:54 Asia/Chongqing] +++++++++payment status:Completed txn_id:4ET2541151806962R receiver_email:samwulily-seller@hotmail.co.uk payment amount:17.00 payment currency:GBP payer email:samwulily-buyer@hotmail.co.uk
+[2015-11-15 03:54 Asia/Chongqing] execGetOrder:select userID,detail from bookcar where reserveid = '103'
+[2015-11-15 03:54 Asia/Chongqing] reserve person:junwu2012@hotmail.com detail:测试普通用户1,您需要在 0:0 从 （大不列颠）联合王国阿伯丁城阿伯丁戴斯邮政编码: AB21 7DU 到 阿伯丁阿伯丁城 AB24 1WU（大不列颠）联合王国 总共 10.8 公里 如果道路通畅，预计用时 20分钟预计费用17英镑。 请注意，此费用仅为估计报价，最终报价由司机报价为准。司机会通过您预留的电话和邮箱和您确认，祝您路途愉快！
+[2015-11-15 03:54 Asia/Chongqing] Before yjmsendmail, send to:junwu2012@hotmail.com, detail: 测试普通用户1,您需要在 0:0 从 （大不列颠）联合王国阿伯丁城阿伯丁戴斯邮政编码: AB21 7DU 到 阿伯丁阿伯丁城 AB24 1WU（大不列颠）联合王国 总共 10.8 公里 如果道路通畅，预计用时 20分钟预计费用17英镑。 请注意，此费用仅为估计报价，最终报价由司机报价为准。司机会通过您预留的电话和邮箱和您确认，祝您路途愉快！
+[2015-11-15 03:54 Asia/Chongqing] After yjmsendmail
+[2015-11-15 03:54 Asia/Chongqing] Verified IPN: cmd=_notify-validate&mc_gross=17.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=12%3A06%3A53+Nov+14%2C+2015+PST&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=103&mc_fee=0.78&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=A5Glnolq0L4ux4KY3kRsLkKv6ysmACGBqlIm43aVm6dJNUfzCY5uK2M4&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=4ET2541151806962R&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=23a0e95fea7cb 

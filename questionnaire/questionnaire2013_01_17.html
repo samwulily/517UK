@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<title>CompanyName - PageName</title>
+<meta http-equiv="Content-Language" content="en-us" /> 
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" /> 
+<meta name="description" content="Description" />
+<meta name="keywords" content="Keywords" /> 
+<meta name="author" content="Enlighten Designs" />
+<style type="text/css" media="all">@import "../css/master.css";</style>
+<script type="text/javascript">
+function validate_required(field,alerttxt)
+{
+	with (field)
+	{
+		if (value==null||value==""){
+			alert(alerttxt);return false
+		}else {
+			return true
+		}
+	}
+}
+
+function validate_form(thisform)
+{
+	with (thisform)
+	  {
+		if (validate_required(coordinator,"联系人必须填写！")==false)
+			{coordinator.focus();return false}
+		if (validate_required(phoneNumber,"联系电话必须填写！")==false)
+			{phoneNumber.focus();return false}
+		if (validate_required(email,"电邮地址必须填写！")==false)
+			{email.focus();return false}
+		if (validate_required(message,"留言必须填写！")==false)
+			{message.focus();return false}
+	  }
+	alert("感谢您的咨询，我们的专家会很快和您联系！");
+}
+function check_form(){
+	var x=document.getElementsByName("q12[]");
+	var q12 = "";
+	for(var i=0;i<x.length;i++){
+		if(x[i].checked == true){
+//			alert(x[i].value);
+			q12 = q12 + x[i].value +";"; 
+		}
+	}
+	document.ques.q12h.value = q12;
+	
+}
+</script>
+</head>
+<body>
+
+<div id="page-container">  
+<iframe frameborder=0 width=940px height=30px marginheight=0 marginwidth=0 scrolling= no src="..//login_reg_nav.php"></iframe>
+<iframe frameborder=0 width=940px height=36px marginheight=0 marginwidth=0 scrolling= no src="..//nav.html"></iframe>
+<iframe frameborder=0 width=940px height=150px marginheight=0 marginwidth=0 scrolling= no src="..//header.html"></iframe>
+<div id="sidebar-a">  
+<div class="padding">  
+	<iframe frameborder=0 width=280px height=130px marginheight=0 marginwidth=0 scrolling= no src="../contact_highlight.html"></iframe>	
+	<table>
+		<tr>
+			<td><img src="../images/arrow.png" height=10px alt="arrow" /><a href="#who_am_I"> 我们是谁</a></td>  
+		</tr>
+		<tr>
+			<td><img src="../images/arrow.png" height=10px alt="arrow" /><a href="#our_customer"> 我们为谁服务</a></td>
+		</tr>
+		<tr>
+			<td><img src="../images/arrow.png" height=10px alt="arrow" /><a href="#how_do_we_serve"> 我们如何为您服务</a></td>
+		</tr>
+		<tr>
+			<td><img src="../images/arrow.png" height=10px alt="arrow" /><a href="#our_advantage"> 我们的优势</a></td>
+		</tr>		
+	</table>  
+</div>  
+</div>  
+<div id="content">  
+<div class="padding">
+  <h2>调查问卷</h2>
+  <form name="ques" action="517yingguosendmail.php" method="post" onSubmit="check_form()">
+  <table>
+	<tr>
+		<td>问题1：您目前居住在？</td>
+	</tr>
+	<tr>
+		<td>
+			<select name="q1">
+				<option>安徽省 Anhuisheng</option>
+				<option>澳门特别行政区 Aomen Tebie Xingzhengqu</option>
+				<option>北京市 Beijingshi</option>
+				<option>重庆市 Chongqingshi</option>
+				<option>福建省 Fujiansheng</option>
+				<option>甘肃省 Gansusheng</option>
+				<option>广东省 Guangdongsheng</option>
+				<option>广西壮族自治区 Guangxi Zhuangzu zizhiqu</option>
+				<option>贵州省 Guizhousheng</option>
+				<option>海南省 Hainansheng</option>
+				<option>河北省 Hebeisheng</option>
+				<option>黑龙江省 Heilongjiangsheng</option>
+				<option>河南省 Henansheng</option>
+				<option>湖北省 Hubeisheng</option>
+				<option>湖南省 Hunansheng</option>
+				<option>江苏省 Jiangsusheng</option>
+				<option>江西省 Jiangxisheng</option>
+				<option>吉林省 Jilinsheng</option>
+				<option>辽宁省 Liaoningsheng</option>
+				<option>内蒙古 Neimenggu zizhiqu</option>
+				<option>宁夏回族自治区 Ningxia Huizu zizhiqu</option>
+				<option>青海省 Qinghaisheng</option>
+				<option>陕西省 Shaanxisheng</option>
+				<option>山东省 Shandongsheng</option>
+				<option>上海市 Shanghaishi</option>
+				<option>山西省 Shanxisheng</option>
+				<option>四川省 Sichuansheng</option>
+				<option>台湾省 Taiwansheng</option>
+				<option>天津市 Tianjinshi</option>
+				<option>香港特别行政区 Xianggang Tebie Xingzhengqu</option>
+				<option>新疆维吾尔族自治区 Xinjiang Weiwu’erzu zizhiqu</option>
+				<option>西藏自治区 Xizang zizhiqu</option>
+				<option>云南省 Yunnansheng</option>
+				<option>浙江省 Zhejiangsheng</option>
+				<option>海外<option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>问题2：您使用的网络服务商是？</td>
+	</tr>
+	<tr>
+		<td>
+			<select name="q2">
+				<option>电信</option>
+				<option>网通</option>
+				<option>铁通</option>
+				<option>有线通</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>问题3：您是？</td>
+	</tr>
+	<tr>
+		<td>
+			<select name="q3">
+				<option>男生</option>
+				<option>女生</option>
+				<option>不想说</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>问题4：您的年龄？</td>
+	</tr>
+	<tr>
+		<td>
+			<select name="q4">
+				<option>18岁以下</option>
+				<option>18-22岁</option>
+				<option>23-30岁</option>
+				<option>31-60岁</option>
+				<option>61岁以上</option>
+				<option>不想说</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>问题5：您的职业？</td>
+	</tr>
+	<tr>
+		<td>
+			<select name="q5">
+				<option>不挣钱的（比如学生，家庭主妇（夫），下岗失业，公司破产等等）</option>
+				<option>工薪族（每月拿钱）</option>
+				<option>自由职业（收入不定时，不定数。有活干，没活玩）</option>
+				<option>财务自由（有钱有闲的主）</option>
+				<option>不想说</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>问题6：您目前家庭结构？</td>
+	</tr>
+	<tr>
+		<td>
+			<select name="q6">
+				<option>快乐单身</option>
+				<option>甜蜜二人</option>
+				<option>幸福小家</option>
+				<option>欢乐大家</option>
+				<option>不想说</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>问题7：您的平均月收入？</td>
+	</tr>
+	<tr>
+		<td>
+			<select name="q7">
+				<option>2000人民币以下</option>
+				<option>2000-5000人民币</option>
+				<option>5000-10000人民币</option>
+				<option>10000人民币以上</option>
+				<option>不想说</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>问题8：刚刚看到我要去英国网的时候，网站给您的印象是什么？</td>
+	</tr>
+	<tr>
+		<td>
+			<select name="q8">
+				<option>糟糕透顶</option>
+				<option>没感觉</option>
+				<option>马马虎虎</option>
+				<option>眼前一亮</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>问题9：浏览完网站后，您能清楚的知道我要去英国网是提供什么服务吗？</td>
+	</tr>
+	<tr>
+		<td>
+			<select name="q9">
+				<option>完全不清楚</option>
+				<option>不是太清楚</option>
+				<option>有点清楚</option>
+				<option>非常清楚</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>问题10：浏览完网站后，您知道我要去英国网可以为您提供服务吗？</td>
+	</tr>
+	<tr>
+		<td>
+			<select name="q10">
+				<option>完全不能</option>
+				<option>大概可以吧</option>
+				<option>希望了解更多信息</option>
+				<option>太好了，我正需要你们的服务</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>问题11：您会收藏我要去英国网吗？</td>
+	</tr>
+	<tr>
+		<td>
+			<select name="q11"> 
+				<option>完全没必要</option>
+				<option>以后需要再找吧</option>
+				<option>我会收藏</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>问题12：浏览完网站后，您觉得我要去英国网需要改进哪些地方？（此题可多选）</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="checkbox" name="q12[]" value = "网站风格">网站风格（比如颜色，字体，导航条，网页文章布局）<br/>
+			<input type="checkbox" name="q12[]" value = "提供更多文章和图片">提供更多文章和图片<br/>
+			<input type="checkbox" name="q12[]" value = "增加论坛，会员注册，用qq，微博或其他ID登陆">增加论坛，会员注册，用qq或其他ID登陆等等<br/>
+			<input type="checkbox" name="q12[]" value = "增加在线客服">增加在线客服<br/>
+			<input type="hidden" name="q12h">
+			其他<input type="text" name="q12a"><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>问题13： 您还有什么想对我们说的？</td>
+	</tr>
+	<tr>
+		<td>
+			<textarea name="q13" rows="4" cols="40"></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td><input type="submit" value="提交"><input type="reset" value="重写"></td>
+	</tr>
+
+  </table>
+  </form>
+</div>  
+</div>
+<iframe frameborder=0 width=940px height=66px marginheight=0 marginwidth=0 scrolling= no src="../footer.html"></iframe>  
+</div>
+
+</div>  
+
+
+
+</body>
+</html>
+

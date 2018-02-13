@@ -1,0 +1,102 @@
+[2015-10-30 23:02 Asia/Chongqing] Test
+[2015-10-30 23:02 Asia/Chongqing] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1029
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=17.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=08%3A09%3A51+Oct+30%2C+2015+PDT&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=77&mc_fee=0.78&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=Af8F2WFzuqfs3pGlWaxOW-8TVrwzA8yL-2BuZuVdKdBBdbAHR7sm0JTs&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=8MD95012HV782762U&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=d4c414f744ada
+[2015-10-30 23:02 Asia/Chongqing] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Fri, 30 Oct 2015 15:15:08 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=sj7BcrTVg8AfqxfaicCJ-6pdzN_E42XqbYM2UwS7JxTCRz35gizuAxtOyf3cILgTnsj4yePnJQnGHB4LClEY0YQiy1PygQKdc5clMXT_9Jn7Tg57ys7eekodkCfWWP5H1Hc30WoLeusxNrZUzH_1RYDzyE-AnUFD1H06qMK6nwq50O9v6km7pcOcXUi03ofcKuY0NJIRjXON1WiZkSmpKgSFD0lJaS7YfDeSpnAsMWSe9_3YNJ54NBXo4YUrD4VjJa3lrS0wAMHq_cmc0pyPTfGE2609M_gtgbleTESrS6bOMmlibcka8N5us7R8D3EmkkEz2LrrNji8Wyk2GX4EPz5C97hXJhqTtAonazCU3OnYA3REDDn3-8_W9zOt4rRkesUrrxdi6Gcq-x-teaqukvW3Oj4uv02amXRvFWPiEsGWyLhGo0KD-82q4nW; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 27-Oct-2025 15:15:09 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 29-Oct-2017 15:15:09 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1446218108931066; path=/; expires=Sun, 22-Oct-45 15:15:08 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Paypal-Debug-Id: 13293200df61d
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D2089366358; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.72.128.11.1446218108914705; path=/; expires=Sun, 22-Oct-45 15:15:08 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2015-10-30 23:02 Asia/Chongqing] +++++++++payment status:Completed txn_id:8MD95012HV782762U receiver_email:samwulily-seller@hotmail.co.uk
+[2015-10-30 23:02 Asia/Chongqing] Verified IPN: cmd=_notify-validate&mc_gross=17.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=08%3A09%3A51+Oct+30%2C+2015+PDT&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=77&mc_fee=0.78&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=Af8F2WFzuqfs3pGlWaxOW-8TVrwzA8yL-2BuZuVdKdBBdbAHR7sm0JTs&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=8MD95012HV782762U&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=d4c414f744ada 
+[2015-10-30 23:05 Asia/Chongqing] Test
+[2015-10-30 23:06 Asia/Chongqing] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1029
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=17.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=08%3A18%3A09+Oct+30%2C+2015+PDT&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=78&mc_fee=0.78&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=Am6SpMj.fkVilwWRYm.eakumbnv4AtRnL7UAWnoK7xEpDYgqrm3zI7e6&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=29305249VW437572W&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=7bd237d9a390a
+[2015-10-30 23:06 Asia/Chongqing] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Fri, 30 Oct 2015 15:18:19 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=lx13ZPXofDNM7IEYoN6mwtpEc7gJ0vbcKrxWT9PYS15sVXfTKZJRfCT3EygXB5VuXF59Wvyv2Vbyt-blBUDBwxhCOpHiQzbe30KiURMPT210tY-TwFiZIEzEP1uDm5WUGEC35U_ZMGedrTJ8DkJUKbILGBxMGAopeqRpmtVK5kJO-mj--WulCI0KlYaPeFRX2dt-JDevlYiMC8WVCJVg_x1AAUxqnzWAIQcyqKOTQ_iDTF-6_pqW1SD4E5gp2t0BlXw0uLqtYwj37jYWRkgLV9ZpbWaqkmc1BrZIHIxOSOQfELSra_BAyrWeFVBmrURRYGGliJLUE-zaf90W-1cHC-LHStl3j3ZxjoAvg3s9iE2_AW3SOLgmE6Gfua93zD5zJov6jVvqAF2ISZZWPXbZ7lvWY0cehrJeU9lVkkpAbZrFULnoIezV7zl0PcW; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 27-Oct-2025 15:18:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 29-Oct-2017 15:18:20 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1446218300053321; path=/; expires=Sun, 22-Oct-45 15:18:20 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Paypal-Debug-Id: d963f7cd8f18
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D1015690070; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.72.128.11.1446218300036453; path=/; expires=Sun, 22-Oct-45 15:18:19 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2015-10-30 23:06 Asia/Chongqing] +++++++++payment status:Completed txn_id:29305249VW437572W receiver_email:samwulily-seller@hotmail.co.uk
+[2015-10-30 23:06 Asia/Chongqing] Verified IPN: cmd=_notify-validate&mc_gross=17.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=08%3A18%3A09+Oct+30%2C+2015+PDT&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=78&mc_fee=0.78&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=Am6SpMj.fkVilwWRYm.eakumbnv4AtRnL7UAWnoK7xEpDYgqrm3zI7e6&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=29305249VW437572W&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=7bd237d9a390a 
+[2015-10-31 06:57 Asia/Chongqing] Test
+[2015-10-31 06:57 Asia/Chongqing] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1029
+Content-Type: application/x-www-form-urlencoded
+Expect: 100-continue
+
+ for IPN payload: cmd=_notify-validate&mc_gross=18.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=16%3A09%3A52+Oct+30%2C+2015+PDT&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=79&mc_fee=0.81&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=A.CSYz4u5IILQm5wM0J0JbJiIcEuA2OKwoavKBHVXpEYD.oQUyCSY1B7&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=11P66467303459818&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=6fec35ece4c9a
+[2015-10-31 06:57 Asia/Chongqing] HTTP response of validation request: HTTP/1.1 100 Continue
+
+HTTP/1.1 200 OK
+Date: Fri, 30 Oct 2015 23:09:59 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=ys7DswXDseS4Qj4byiC9n86Wo2nnv2X2b1UnNovDZO1l3Bid_nrFa4JkGU03pjEh0f2phBGUagmx7yLy_OIY_0vvsFNxMXSb4YyfWfDm5hMpgH2-8ye2D7qARL9fKskEVuinfi6U2a1sr7VFtozTO5M06jwxI80TeOIfrQuTrMo3hlU7ND8UJ4_W5wQx9jL2cggJfnJhdfpZWJZCcF2-UuyD-16gtlxdlcCRa1WGG2YD6sd0E-8ORf68r22Z5ZF7PX0UqUUGuAy93BiW3xvIHW7h1I4pnGZIBvRUBnLbz00prkWcNMz5AjGLQL5_UOjPujj9dT-jGOnGGw0R-r49ZoTO9aY8hdeiQW5gOdYBnqZcW8ux9MHbjvdee8aNwxxNDRsqBQ7ICnHZMcjZjXS1FYFA5wwfc8rdMks13LenYJwt1ADysQsC2rBL-We; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 27-Oct-2025 23:09:59 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 29-Oct-2017 23:09:59 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1446246599326380; path=/; expires=Sun, 22-Oct-45 23:09:59 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Paypal-Debug-Id: c20cd6f64b7a3
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D880%26app%3Dappdispatcher%26TIME%3D3354932054; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: Apache=10.72.128.11.1446246599308866; path=/; expires=Sun, 22-Oct-45 23:09:59 GMT
+Strict-Transport-Security: max-age=14400
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+VERIFIED
+[2015-10-31 06:57 Asia/Chongqing] +++++++++payment status:Completed txn_id:11P66467303459818 receiver_email:samwulily-seller@hotmail.co.uk
+[2015-10-31 06:57 Asia/Chongqing] Verified IPN: cmd=_notify-validate&mc_gross=18.00&protection_eligibility=Eligible&address_status=confirmed&payer_id=CTB2HNSFXW8HJ&tax=0.00&address_street=1+Main+Terrace&payment_date=16%3A09%3A52+Oct+30%2C+2015+PDT&payment_status=Completed&charset=gb2312&address_zip=W12+4LQ&first_name=test&option_selection1=79&mc_fee=0.81&address_country_code=GB&address_name=test+buyer&notify_version=3.8&custom=&payer_status=verified&business=samwulily-seller%40hotmail.co.uk&address_country=United+Kingdom&address_city=Wolverhampton&quantity=1&verify_sign=A.CSYz4u5IILQm5wM0J0JbJiIcEuA2OKwoavKBHVXpEYD.oQUyCSY1B7&payer_email=samwulily-buyer%40hotmail.co.uk&option_name1=orderId&txn_id=11P66467303459818&payment_type=instant&last_name=buyer&address_state=West+Midlands&receiver_email=samwulily-seller%40hotmail.co.uk&payment_fee=&receiver_id=GK24UG7QJG72N&txn_type=web_accept&item_name=order+amount&mc_currency=GBP&item_number=&residence_country=GB&test_ipn=1&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=6fec35ece4c9a 

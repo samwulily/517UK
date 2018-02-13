@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<title>CompanyName - PageName</title>
+<meta http-equiv="Content-Language" content="en-us" /> 
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" /> 
+<meta name="description" content="Description" />
+<meta name="keywords" content="Keywords" /> 
+<meta name="author" content="Enlighten Designs" />
+<style type="text/css" media="all">@import "../css/master.css";</style>
+<script type="text/javascript">
+
+function validate_required(field,alerttxt)
+{
+	with (field)
+	{
+		if (value==null||value==""){
+			alert(alerttxt);return false
+		}else {
+			return true
+		}
+	}
+}
+
+function validate_form(thisform)
+{
+	with (thisform)
+	  {
+		if (validate_required(companyName,"公司或个人名称必须填写！")==false)
+			{coordinator.focus();return false}
+		if (validate_required(address,"地址必须填写！")==false)
+			{coordinator.focus();return false}
+		if (validate_required(postcode,"邮编必须填写！")==false)
+			{coordinator.focus();return false}
+		if (validate_required(coordinator,"联系人必须填写！")==false)
+			{coordinator.focus();return false}
+		if (validate_required(phoneNumber,"联系电话必须填写！")==false)
+			{phoneNumber.focus();return false}
+		if (validate_required(email,"电邮地址必须填写！")==false)
+			{email.focus();return false}
+	  }
+	alert("感谢您的加盟，我们的客服会很快和您联系！");
+}
+</script>
+
+</head>
+<body>
+
+<div id="page-container">  
+<iframe frameborder=0 width=940px height=30px marginheight=0 marginwidth=0 scrolling= no src="../login_reg_nav.php"></iframe>
+<iframe frameborder=0 width=940px height=36px marginheight=0 marginwidth=0 scrolling= no src="../nav.html"></iframe>
+<iframe frameborder=0 width=940px height=150px marginheight=0 marginwidth=0 scrolling= no src="../header.html"></iframe>
+<div id="sidebar-a">  
+<div class="padding">  
+	<iframe frameborder=0 width=280px height=130px marginheight=0 marginwidth=0 scrolling= no src="../contact_highlight.html"></iframe>	
+   
+</div>  
+</div>  
+<div id="content">  
+<div class="padding">
+  <h2>我要加盟（打<font color="red" size=5>*</font>部分为必填部分）</h2>
+  <p>
+  <form action="add_jiameng_message.php" method="post" onsubmit="return validate_form(this)">
+	<table>
+		<tr>
+			<td>公司或个人名称：</td>
+			<td><input type="text" name="companyName" size="51"><font color="red" size=5>*</font></td>
+		</tr>
+		<tr>
+			<td>详细地址：</td>
+			<td><input type="text" name="address" size="51"><font color="red" size=5>*</font></td>
+		</tr>
+		<tr>
+			<td>邮政编码：</td>
+			<td><input type="text" name="postcode" size="51"><font color="red" size=5>*</font></td>
+		</tr>
+		<tr>
+			<td>联系人：</td>
+			<td><input type="text" name="coordinator" size="51"><font color="red" size=5>*</font></td>
+		</tr>
+		<tr>
+			<td>联系电话：</td>
+			<td><input type="text" name="phoneNumber" size="51"><font color="red" size=5>*</font></td>
+		</tr>
+		<tr>
+			<td>电邮地址：</td>
+			<td><input type="text" name="email" size="51"><font color="red" size=5>*</font></td>
+		</tr>
+		<tr>
+			<td>公司主页：</td>
+			<td><input type="text" name="homepage" size="51"></td>
+		</tr>
+		<tr>
+			<td>QQ/MSN：</td>
+			<td><input type="text" name="qqmsn" size="51"></td>
+		</tr>
+		<tr>
+			<td>公司简介：</td>
+			<td><textarea name="companyProfile" rows="4" cols="40"></textarea></td>
+		</tr>
+		<tr>
+			<td>留言：</td>
+			<td><textarea name="message" rows="4" cols="40"></textarea></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="提交"><input type="reset" value="重写"></td>
+		</tr>
+	</table>
+  </form>
+  </p>
+  
+  
+</div>  
+</div>
+<iframe frameborder=0 width=940px height=66px marginheight=0 marginwidth=0 scrolling= no src="../footer.html"></iframe>   
+</div>
+
+</div>  
+
+
+
+</body>
+</html>
+

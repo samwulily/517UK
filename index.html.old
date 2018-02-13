@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<title>我要去英国网</title>
+<meta http-equiv="Content-Language" content="en-us" /> 
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" /> 
+<meta name="description" content="去英国" />
+<meta name="keywords" content="我要去英国" /> 
+<meta name="author" content="Enlighten Designs" />
+<style type="text/css" media="all">@import "css/master.css";</style>
+</head>
+<body>
+
+<div id="page-container">  
+<iframe frameborder=0 width=940px height=30px marginheight=0 marginwidth=0 scrolling= no src="login_reg_nav.php"></iframe>
+<iframe frameborder=0 width=940px height=36px marginheight=0 marginwidth=0 scrolling= no src="nav.html"></iframe>
+<iframe frameborder=0 width=940px height=150px marginheight=0 marginwidth=0 scrolling= no src="header.html"></iframe>
+<div id="sidebar-a">  
+<div class="padding">
+	<iframe frameborder=0 width=280px height=130px marginheight=0 marginwidth=0 scrolling= no src="contact_highlight.html"></iframe>	
+	<table>
+		<tr>
+			<td><img src="images/arrow.png" height=10px alt="arrow" /><a href="aboutUs.html"> 关于我们</a></td>
+		</tr>
+		<tr>
+			<td><img src="images/arrow.png" height=10px alt="arrow" /><a href="businessCooperation.html"> 商务合作</a></td>
+		</tr>
+		<tr>
+			<td><img src="images/arrow.png" height=10px alt="arrow" /><a href="contactUs.html"> 联系我们</a></td>
+		</tr>
+		<tr>
+			<td><img src="images/arrow.png" height=10px alt="arrow" /><a href="recuitment.html"> 招贤纳才</a></td>
+		</tr>
+		<tr>
+			<td><img src="images/arrow.png" height=10px alt="arrow" /><a href="advice_complain.html"> 投诉建议</a></td>
+		</tr>
+		
+	</table>
+		
+	<table>
+		<tr><td><strong></strong></td></tr>
+	</table>
+</div>  
+</div>  
+<div id="content">  
+<div class="padding">
+  <h2>去英国干什么</h2>
+  <p>去英国能做的事情太多了，也许这根本就不是个问题。但是，对于一些对英国了解很少，没有出过国门的朋友，事先知道一些去英国能做什么，也能
+给自己做决定之前多一些参考和帮助。</p>  
+  <h2>学习</h2>
+  <p>首先，去英国可以学习。学英语可以说是一个去英国学习的最常见的课程。英语起源于英国，英式英语一向以正统，高雅而著称。虽说现在美式英语
+也很流行和时尚，但英国人依然死板的固守着自己的英式英语，从发音，拼写到单词和语法。一遍一遍，不厌其烦的纠正着我们这些受美式英语影响的人。
+去英国学习不受年龄，原专业的限制。只要你想学，什么时候都不晚。有没有基础也不是关键问题。除了英语，英国学科广泛，语言，科学，技术，艺术，
+医学，宗教等等几乎应有尽有。甚至中文，中国历史，藏医，高原病研究都可以到英国来学习。学期长短很灵活，从几周到几年，看你的课程而定。</p>
+  <h2>旅游</h2>
+  <p>其次，去英国旅游也是一个不错的理由。这里有历史悠久的文化和自然遗产，这里有丰富的户外活动，这里有世界各地的美食，这里还是购物者的天堂。
+无论城市与乡村，古老与现代，春夏与秋冬。古老而又散发活力的英伦必将给您带来永久的回忆。</p>
+  <h2>创业</h2>
+  <p>还有，去英国可以做生意，开拓您的事业。自从2008年金融危机以来，英国不断收紧移民政策，很多签证收紧甚至取消。比如，取消了高技术移民，
+留学生毕业后的工作签证。一般技术签证，学生签证，甚至和英国人结婚的家庭移民签证都比以前难了很多。唯独投资移民和企业家移民签证，不但没有
+收紧，反而条件降低了许多。对英语的要求已经到了非常宽容的地步。这和英国鼓励外来移民来英国投资，创办企业，雇佣本国人，从而解决国民就业，
+消减福利和增加国家收入也是相一致的。</p>
+  <h2>移民</h2>
+  <p>最后，如果您觉得好，喜欢英国，也适应英国，您还可以选择移居英国。英国是世界主要发达国家之一，资本市场成熟，法制健全，保护私有财产，
+教育一流，福利制度健全。气候冬无严寒，夏无酷暑，适合人类居住。</p>
+  <h2>怎样去英国</h2>
+  <p>目前来说，去英国的主要方式为，访问英国，去英国学习，工作，通过结婚，收养等家庭方式或者申请难民庇护的方式。对于一般的中国人来说，
+主要的方式就是访问英国，学习和工作了。</p>
+
+</div>  
+</div>
+<iframe frameborder=0 width=940px height=66px marginheight=0 marginwidth=0 scrolling= no src="footer.html"></iframe>
+</div>
+
+</div>  
+
+
+
+</body>
+</html>
+

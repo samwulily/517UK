@@ -1,0 +1,249 @@
+html, body {   
+height: 100%;
+margin: 0;   
+padding: 0;   
+}
+
+body {   
+ font-family: Arial, Helvetica, Verdana, Sans-serif;   
+ font-size: 12px;   
+ color: #666666;      
+}
+ul,li{margin:0;padding:0;list-style:none}
+#page-container {   
+width: 940px;   
+margin: auto;    
+}      
+
+#map-canvas {
+	height: 100%;
+    width: 50%;
+}
+
+#content-pane {
+    float:right;
+    width:48%;
+    padding-left: 2%;
+}
+
+#outputDiv {
+    font-size: 11px;
+}
+
+#main-nav {   
+width: auto;
+height: 36px;   
+}   
+
+#usr_login_reg {
+font-family: Tahoma, Arial, Helvetica, Sans-serif;   
+font-size: 12px;    
+margin-top: 5px;
+margin-right: 10px;
+}
+
+#usr_login_reg a {
+text-decoration: none;
+}
+#usr_login_reg a:hover{
+color: #db6d16;
+}
+
+#main-nav a{
+color:#666;
+text-decoration:none;
+}
+#main-nav a:active,a:focus{outline:none;}
+#main-nav a:hover{color:#f70;text-decoration:underline;}
+#main-nav h1,h2,h3{margin:0;padding:0;display:inline;font-size:12px}
+#header {   
+height: 150px;   
+background: #db6d16   
+url(../images/headers/about.jpg);   
+}   
+
+#header h1 {   
+margin: 0;   
+padding: 0;   
+float: right;   
+margin-top: 57px;   
+padding-right: 31px;   
+}   
+
+ #sidebar-a {   
+float: left;   
+width: 280px;   
+background: #fffafa;   
+line-height: 18px;
+}   
+#sidebar-a .padding {   
+padding: 25px;   
+}   
+
+#sidebar-a a {   
+text-decoration: none;   
+}  
+#sidebar-a a:hover {
+color: #db6d16;
+}
+
+ #sidebar-b{   
+float: left;   
+width: 120px;   
+background: #fffafa;   
+line-height: 18px;
+}   
+#sidebar-b.padding {   
+padding: 25px;   
+}   
+
+#sidebar-b a {   
+text-decoration: none;   
+}  
+#sidebar-b a:hover {
+color: #db6d16;
+}
+
+#content {   
+margin-left: 280px;   
+background: white;  
+line-height: 18px;
+}  
+
+#content table{
+	border:1px solid gray;
+}
+
+#content table.nosolidborder{
+	border:none;
+}
+
+#content h1{
+	font-weight: bold;
+	font-size: 15pt;
+	color:blue;
+}
+
+#content h2 {   
+	font-weight: bold;
+	font-size: 12pt;
+	margin: 0;   
+	padding: 0;   
+	padding-bottom: 15px;   
+	color:blue;
+}
+
+#content h3 {   
+	font-weight: bold;
+	font-size: 10pt;
+	margin: 0;   
+	padding: 0;   
+	padding-bottom: 15px;   
+}
+   
+#content p {   
+	margin: 0;   
+	padding: 0;   
+	padding-bottom: 15px;   
+}
+
+#content .padding {   
+	padding: 25px;   
+}   
+
+
+#content_a {   
+margin-left: 120px;   
+background: white;  
+line-height: 18px;
+}  
+
+#content_a table{
+	border:1px solid gray;
+}
+
+#content_a table.nosolidborder{
+	border:none;
+}
+
+#content_a h1{
+	font-weight: bold;
+	font-size: 15pt;
+	color:blue;
+}
+
+#content_a h2 {   
+	font-weight: bold;
+	font-size: 12pt;
+	margin: 0;   
+	padding: 0;   
+	padding-bottom: 15px;   
+	color:blue;
+}
+
+#content_a h3 {   
+	font-weight: bold;
+	font-size: 10pt;
+	margin: 0;   
+	padding: 0;   
+	padding-bottom: 15px;   
+}
+   
+#content_a p {   
+	margin: 0;   
+	padding: 0;   
+	padding-bottom: 15px;   
+}
+
+#content_a .padding {   
+	padding: 25px;   
+}   
+
+#contact{
+	height: 900px;
+}
+
+#contact td{
+	font-weight:bold;
+	font-size:10pt;
+	color:orange;
+}
+
+
+
+#footer {   
+	clear: both;   
+	height: 100px;   
+	font-family: Tahoma, Arial, Helvetica, Sans-serif;   
+	font-size: 11px;    
+	border-top: 1px solid #efefef;   
+	padding: 1px 25px;   
+	line-height: 18px;   
+	background: #f5f5f5;   
+}   
+#footer #altnav {
+	width: 350px;
+	float: right;
+	text-align: center;
+}
+
+#footer a {   
+	text-decoration: none;   
+}  
+#footer a:hover {
+	color: #db6d16;
+}
+
+ .hidden {   
+display: none;   
+}   
+
+.menul{background:url('../images/menul.gif') no-repeat left top;}
+.menur{background:url('../images/menur.gif') no-repeat right top;height:38px;overflow:hidden;padding:0 0 0 30px;}
+#menu{background:url('../images/menu.gif') repeat-x left top;}
+#menu li{float:left;height:38px;background:url('images/menuli.gif') no-repeat right top; padding:0 12px 0 10px;}
+#menu li a{float:left;display:inline;height:38px;line-height:38px;text-align:center;font-weight:bold;color:#fff;padding-left:20px;}
+#menu li h3{display:block;padding-right:20px;float:left}
+#menu li a:hover,#menu li a.now{text-decoration:none}
+
+#menu li.last{background:none;}
